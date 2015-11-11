@@ -1,0 +1,13 @@
+<head>
+	<title> Crear  </title>
+</head>
+<section>
+	<ul>
+	<h1> Crear Mascota </h1>
+		<form action = "" method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p}}
+		<input type="submit">
+		</form>
+	</ul>
+</section>

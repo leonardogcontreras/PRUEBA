@@ -1,0 +1,19 @@
+<head>
+	<title> Listar Registrados </title>
+</head>
+<section>
+	<ul>
+	<h1> Listar Mascotas Registrado</h1>
+		{% for e in object_list %}
+			<li>
+			Foto       : <img src= '/home/cesar/prueba/{{e.foto}}' width="50" height="50" /><br>
+			Nombre     : {{e.nombre}}<br>
+			Raza       : {{e.raza}}<br> 
+			Color      : {{e.color}}<br> 
+			Sexo       : {{e.sexo}}<br>
+			Descripcion: {{e.descripcion}}<br><br><br>
+			</li>
+			
+		{% endfor %}
+	</ul>
+</section>

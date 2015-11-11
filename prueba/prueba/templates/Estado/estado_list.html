@@ -1,0 +1,20 @@
+<head>
+	<title> Listar Mascota </title>
+</head>
+<section>
+	<ul>
+	<h1> Listar Mascotas Asociadas a Dueños</h1>
+		{% for e in object_list %}
+			<li>
+			Foto       : <img src= '{{e.Perfil_Mascota.foto}}' width="50" height="50" /><br>
+			Nombre Mascota     : {{e.Mascota.nombre}}<br>
+			Nombre Dueño     : {{e.Usuario.username}}<br>
+			Raza       : {{e.Mascota.raza}}<br> 
+			Color      : {{e.Mascota.color}}<br> 
+			Sexo       : {{e.Mascota.sexo}}<br>
+			Descripcion: {{e.Mascota.descripcion}}<br>
+			</li>
+			
+		{% endfor %}
+	</ul>
+</section>
